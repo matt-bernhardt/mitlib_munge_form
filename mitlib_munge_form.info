@@ -1,0 +1,4 @@
+core = "7.x"
+name = "Form Munging"
+description = "Overrides 'Add to cart' text on multi-page order forms"
+package = "MIT Libraries"

@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function mitlib_munge_form_form_alter(&$form, $form_state, $form_id) {
+  if (commerce_form_callback($form_id, $form_state) == "commerce_cart_add_to_cart_form") {
+    $form['submit']['#attributes']['title'] = $form['submit']['#attributes']['value'] = t('Continue');
+  }
+} // mitlib_munge_form_form_alter
